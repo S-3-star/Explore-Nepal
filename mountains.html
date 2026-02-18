@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountains of Nepal</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #e0f7ff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+
+      .book {
+        width: 1000px;
+        height: 650px;
+        border: 3px solid #0d3c58;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50px;
+        position: relative;
+        background: #fff;
+      }
+
+      .page {
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+
+      .page.active {
+        display: flex;
+      }
+
+      .page img {
+        width: 48%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .page-content {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #0d3c58;
+      }
+
+      .page-content h2 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+
+      .page-content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+
+      .buttons {
+        margin-top: 30px;
+      }
+
+      button {
+        padding: 12px 25px;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 6px;
+        background-color: #0d3c58;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #195c7d;
+      }
+
+      /* Responsive */
+      @media (max-width: 1100px) {
+        .book {
+          width: 90%;
+          height: 60vh;
+        }
+        .page img,
+        .page-content {
+          width: 48%;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .book {
+          width: 95%;
+          height: auto;
+        }
+        .page {
+          flex-direction: column;
+          padding: 15px;
+        }
+        .page img,
+        .page-content {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book">
+      <!-- Cover -->
+      <div class="page active">
+        <div
+          class="page-content"
+          style="width: 100%; text-align: center; position: relative"
+        >
+          <img
+            src="images/me.jpg"
+            alt="Nepal Mountains"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 10px;
+            "
+          />
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: palegreen;
+              text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            "
+          >
+            <h1 style="font-size: 3rem">Famous Mountains of Nepal</h1>
+            <p style="font-size: 1.5rem">
+              Explore the majestic peaks of the Himalayas. Click Next to start
+              your journey.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mountain 1: Everest -->
+      <div class="page">
+        <img src="images/sagarmatha.jpg" alt="Mount Everest" />
+        <div class="page-content">
+          <h2>Mount Everest</h2>
+          <p>
+            Mount Everest, locally known as Sagarmatha (Nepali) , is the world’s
+            highest mountain at 8,848.86 meters. It is located in the Mahalangur
+            Himal sub-range of the Himalayas. Popular trekking routes include
+            the Everest Base Camp trek and the Gokyo Lakes trail. Everest offers
+            breathtaking glaciers, panoramic views, and a challenging climb for
+            mountaineers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mountain 2: Lhotse -->
+      <div class="page">
+        <img src="images/lhotse.jpg" alt="Mount Lhotse" />
+        <div class="page-content">
+          <h2>Mount Lhotse</h2>
+          <p>
+            Lhotse, the 4th highest mountain in the world at 8,516 meters, lies
+            immediately south of Mount Everest. Known for its dramatic South
+            Face, Lhotse is part of the Everest massif and is often included in
+            trekking itineraries. Trekkers enjoy stunning views from Kala
+            Patthar and nearby base camps.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mountain 3: Annapurna -->
+      <div class="page">
+        <img src="images/annapurna.jpg" alt="Annapurna" />
+        <div class="page-content">
+          <h2>Annapurna</h2>
+          <p>
+            The Annapurna Massif includes several peaks above 7,000 meters, with
+            Annapurna I standing at 8,091 meters. The Annapurna Circuit trek is
+            famous for its cultural diversity, terraced landscapes, and natural
+            beauty. This region offers rich biodiversity, high mountain passes,
+            and glimpses of traditional Gurung and Thakali villages.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mountain 4: Makalu -->
+      <div class="page">
+        <img src="images/makalu.jpg" alt="Makalu" />
+        <div class="page-content">
+          <h2>Makalu</h2>
+          <p>
+            Makalu, 8,485 meters high, is the 5th highest peak in the world. It
+            has a distinctive pyramid shape and is located 19 km southeast of
+            Everest. The region is remote and less crowded, offering adventure
+            trekkers a challenging experience along with untouched Himalayan
+            landscapes and rich flora and fauna.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mountain 5: Kanchenjunga -->
+      <div class="page">
+        <img src="images/kanchenjunga.jpg" alt="Kanchenjunga" />
+        <div class="page-content">
+          <h2>Kanchenjunga</h2>
+          <p>
+            Kanchenjunga, at 8,586 meters, is the third highest mountain in the
+            world, straddling the Nepal-India border. Known for its five
+            summits, Kanchenjunga offers spectacular scenery with deep valleys
+            and glacial landscapes. The Kanchenjunga trek showcases the region’s
+            natural beauty and rich biodiversity.
+          </p>
+        </div>
+      </div>
+      <!-- Mountain 6: Dhaulagiri -->
+      <div class="page">
+        <img src="images/dhaulagiri.jpg" alt="Dhaulagiri" />
+        <div class="page-content">
+          <h2>Dhaulagiri</h2>
+          <p>
+            Dhaulagiri, the 7th highest mountain at 8,167 meters, is famous for
+            its striking white peaks and challenging climbing routes. The
+            Dhaulagiri region offers remote trekking experiences with panoramic
+            views and rich biodiversity.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mountain 7: Manaslu -->
+      <div class="page">
+        <img src="images/manaslu.jpg" alt="Manaslu" />
+        <div class="page-content">
+          <h2>Manaslu</h2>
+          <p>
+            Manaslu, at 8,163 meters, is the eighth highest mountain in the
+            world. Known as the "Mountain of the Spirit," it offers beautiful
+            trekking trails, including the Manaslu Circuit, which is less
+            crowded than Annapurna or Everest regions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mountain 8: Cho Oyu -->
+      <div class="page">
+        <img src="images/chooyu.jpg" alt="Cho Oyu" />
+        <div class="page-content">
+          <h2>Cho Oyu</h2>
+          <p>
+            Cho Oyu, 8,188 meters, is the sixth highest mountain globally.
+            Located on the Nepal-Tibet border, it is known for being one of the
+            easiest 8,000-meter peaks to climb. The surrounding landscapes
+            include beautiful valleys, glaciers, and traditional villages.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="prevPage()">Previous</button>
+      <button onclick="nextPage()">Next</button>
+    </div>
+
+    <script>
+      let current = 0;
+      const pages = document.querySelectorAll(".page");
+
+      function showPage(index) {
+        pages.forEach((page, i) => page.classList.remove("active"));
+        pages[index].classList.add("active");
+      }
+
+      function nextPage() {
+        if (current < pages.length - 1) current++;
+        showPage(current);
+      }
+
+      function prevPage() {
+        if (current > 0) current--;
+        showPage(current);
+      }
+    </script>
+  </body>
+</html>

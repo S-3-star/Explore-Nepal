@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepali Culture</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #234c6e;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: linear-gradient(to right, #0d3c58, #90caf9);
+        color: white;
+      }
+
+      .culture-section {
+        padding: 60px 20px;
+      }
+
+      .culture-item {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+      }
+
+      .culture-item.reverse {
+        flex-direction: row-reverse;
+      }
+
+      .culture-item img {
+        width: 45%;
+        min-width: 280px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        transition: transform 0.4s ease;
+      }
+
+      .culture-item img:hover {
+        transform: scale(1.05);
+      }
+
+      .culture-text {
+        flex: 1;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .culture-text h2 {
+        font-size: 2rem;
+        color: #0d3c58;
+        margin-bottom: 15px;
+      }
+
+      .culture-text p {
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.7;
+      }
+
+      footer {
+        background-color: #0d3c58;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #0d3c58"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Explore Nepal</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About Us.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="text-center p-5">
+      <h1>Nepali Culture</h1>
+      <p class="lead">
+        Traditions, communities, and lifestyles that make Nepal unique.
+      </p>
+    </header>
+
+    <!-- Culture Section -->
+    <section class="culture-section container">
+      <div class="culture-item">
+        <img src="images/tamang.jpg" alt="Tamang Culture" />
+        <div class="culture-text">
+          <h2>Tamang Culture</h2>
+          <p>
+            The Tamang people are known for their lively music (Tamang Selo),
+            colorful traditional attire, and Buddhist rituals. They are one of
+            the largest indigenous groups in Nepal, with a strong cultural
+            presence in the hilly regions.
+          </p>
+        </div>
+      </div>
+
+      <div class="culture-item reverse">
+        <img src="images/tharu.jpg" alt="Tharu Culture" />
+        <div class="culture-text">
+          <h2>Tharu Culture</h2>
+          <p>
+            Tharus are indigenous to the Terai region of Nepal. Their culture is
+            deeply connected with nature, agriculture, and folk traditions. They
+            are well-known for their vibrant dances and unique mud-plastered
+            houses.
+          </p>
+        </div>
+      </div>
+
+      <div class="culture-item">
+        <img src="images/newar.jpg" alt="Newar Culture" />
+        <div class="culture-text">
+          <h2>Newar Culture</h2>
+          <p>
+            Newars are the original inhabitants of the Kathmandu Valley. Their
+            culture is a rich blend of Hindu and Buddhist traditions, famous for
+            festivals like Indra Jatra, Bisket Jatra, and unique Newari
+            cuisines.
+          </p>
+        </div>
+      </div>
+
+      <div class="culture-item reverse">
+        <img src="images/limbu.jpg" alt="Limbu Culture" />
+        <div class="culture-text">
+          <h2>Limbu Culture</h2>
+          <p>
+            The Limbu community from eastern Nepal has a unique culture that
+            includes their traditional drink 'Tongba' and dances performed
+            during festivals. Their Kirati rituals are deeply tied to nature
+            worship.
+          </p>
+        </div>
+      </div>
+
+      <div class="culture-item">
+        <img src="images/magar.jpg" alt="Magar Culture" />
+        <div class="culture-text">
+          <h2>Magar Culture</h2>
+          <p>
+            The Magar community is spread across western Nepal and is famous for
+            their bravery and service in the Gurkha regiments. They celebrate
+            festivals with traditional dances like 'Kauda Nach' and have a rich
+            folklore tradition.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="culture-item">
+        <img src="images/How-to-Wear-Nepali-Dress-1.jpg" alt="Brahmin Culture" />
+        <div class="culture-text">
+          <h2>Brahmin Culture</h2>
+          <p>
+Brahmin culture is traditionally associated with learning, spirituality, and the practice of rituals in Hindu society. Brahmins are regarded as the priestly class, responsible for performing religious ceremonies, preserving sacred texts like the Vedas, and guiding the community in moral and spiritual matters. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 Explore Nepal</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
