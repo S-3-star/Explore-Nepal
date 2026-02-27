@@ -81,10 +81,6 @@ body, html {
 .footer { background-color: #0d3c58; color: white; padding: 30px 20px; }
 .footer h5 { color: #90caf9; margin-bottom: 10px; }
 
-/* Fade-in animation */
-.fade-in { opacity: 0; transform: translateY(20px); transition: all 1s ease-out; }
-.fade-in.appear { opacity: 1; transform: translateY(0); }
-
 /* Responsive */
 @media(max-width:768px){
   .main-content { flex-direction: column; }
