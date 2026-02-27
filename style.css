@@ -1,178 +1,51 @@
 /* General */
-html, body {
-  height: 100%;
+body, html {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #f4f8fb;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Navbar */
-.custom-navbar {
-  background: rgba(13,60,88,0.85);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
 .navbar-nav .nav-link {
   color: white !important;
 }
-
 .navbar-nav .nav-link:hover {
   color: #90caf9 !important;
 }
 
 /* Carousel */
 .carousel-img {
-  height: 90vh;
+  height: 80vh;
   object-fit: cover;
 }
-
-.hero-text {
-  background: rgba(0,0,0,0.4);
-  padding: 25px;
-  border-radius: 12px;
-}
-
 .hero-text h1 {
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
+  color: white;
+}
+.hero-text p {
+  color: white;
+  font-size: 20px;
+}
+.hero-text .btn-info {
+  background-color: #90caf9;
+  border: none;
 }
 
-/* Main Content */
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
+/* Sidebar */
 .sidebar {
   flex: 1;
   min-width: 220px;
-  margin-right: 20px;
-  background-color: #ffffff;
+  background: #e3f2fd;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.sidebar h3 {
-  color: #0d3c58;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #0d3c58;
-}
-
-.sidebar a:hover {
-  color: #90caf9;
-}
-
-.content-area {
-  flex: 2;
-  padding: 20px;
-  color: #0d3c58;
-}
-
-.about-images {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.about-img {
-  width: calc(33% - 10px);
-  height: 400px;
-  object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.sidebar h3 { color: #0d47a1; }
+.sidebar a { color: #0d47a1; text-decoration: none; }
+.sidebar a:hover { color: #90caf9; }
 
-/* Explore Cards */
-.explore {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.explore-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: all 0.4s ease;
-  max-width: 300px;
-}
-
-.card:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.card h3 {
-  margin-top: 15px;
-  color: #0d3c58;
-}
-
-.card p {
-  color: #444;
-}
-/* Timeline Section */
-.history-section {
-  background-color: #f4f8fb;
-}
-/* History Section */
-.history-section {
-  background-color: #f4f8fb;
-  padding: 60px 20px;
-}
-
-.history-section h2 {
-  color: #0d3c58;
-  font-weight: 600;
-}
-
-.history-section p {
-  color: #0d3c58;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-
-.history-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.history-img-wrapper {
-  text-align: center;
-}
-
-.history-img {
+/* Content Images */
+.about-img, .history-img, .about-nepal .about-img {
   width: 220px;
   height: 220px;
   object-fit: cover;
@@ -180,57 +53,41 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
   transition: transform 0.4s ease;
 }
-
-.history-img:hover {
+.about-img:hover, .history-img:hover, .about-nepal .about-img:hover {
   transform: scale(1.05);
 }
-
-.history-img-wrapper p {
-  margin-top: 10px;
+.history-img-wrapper, .about-img-wrapper {
+  text-align: center;
+}
+.history-img-wrapper p, .about-img-wrapper p {
+  margin-top: 8px;
   font-weight: 500;
   color: #0d3c58;
 }
-.footer {
-  background-color: #0d3c58; /* Dark blue background */
-  color: #ffffff;             /* White text */
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 14px;
-  margin-top: auto;
-}
 
-.footer h5 {
-  color: #90caf9;   /* Light blue for heading */
-  margin-bottom: 10px;
-  font-weight: 600;
-}
+/* Sections */
+.history-section { background: #f4f8fb; padding: 60px 20px; }
+.about-nepal { background: linear-gradient(to right, #90caf9, #e3f2fd); padding: 60px 20px; }
+.history-section h2, .about-nepal h2 { color: #0d3c58; font-weight: 600; }
 
-.footer p {
-  color: #ffffff;   /* Keep paragraph text white */
-  margin: 3px 0;
-}
+/* Explore Cards */
+.explore-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.card { max-width: 300px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+.card:hover { transform: translateY(-8px); }
+.card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+.card h3 { color: #0d3c58; margin-top: 15px; }
 
-/* Optional: hover effect for links if you add any */
-.footer a {
-  color: #90caf9;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+/* Footer */
+.footer { background-color: #0d3c58; color: white; padding: 30px 20px; }
+.footer h5 { color: #90caf9; margin-bottom: 10px; }
 
-.footer a:hover {
-  color: #ffffff;
-}
-
+/* Fade-in animation */
+.fade-in { opacity: 0; transform: translateY(20px); transition: all 1s ease-out; }
+.fade-in.appear { opacity: 1; transform: translateY(0); }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .history-images {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .history-img {
-    width: 80%;
-    height: auto;
-  }
+@media(max-width:768px){
+  .main-content { flex-direction: column; }
+  .carousel-img { height: 250px; }
+  .about-img, .history-img { width: 80%; height: auto; margin: 0 auto; }
 }

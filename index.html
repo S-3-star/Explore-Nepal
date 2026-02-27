@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" style="background-color: #0d3c58;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Explore Nepal</a>
         <button
@@ -59,7 +59,7 @@
       </div>
     </nav>
 
-    <!-- Bootstrap Carousel -->
+    <!-- Carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -99,61 +99,68 @@
         </ul>
       </div>
 
-      <div class="content-area flex-fill">
-        <h2>About Nepal</h2>
-        <p>
-          Nepal is a South Asian country located in the Himalayas, bordered by India and China.
-          It's known for Mount Everest, the highest peak in the world, and Lumbini, the birthplace of Lord Buddha.
-          Tourism, agriculture, and culture are at the heart of Nepalese life.
-          Explore the majestic mountains, rich spiritual heritage, and pristine natural landscapes that make Nepal unique.
+    <!-- History Section -->
+    <section class="history-section py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">History of Nepal</h2>
+        <p class="mb-5">
+          Nepal has a rich and ancient history dating back thousands of years. The Kathmandu Valley was first ruled by the Kirat dynasty, known for agriculture and early governance. The Licchavi dynasty (400–750 AD) brought a golden age of art, architecture, and administration. The Malla dynasty (1200–1768 AD) promoted festivals, music, and Durbar Square architecture. In the 18th century, King Prithvi Narayan Shah unified small kingdoms to form modern Nepal. Today, Nepal preserves its historical traditions while embracing modernization, tourism, and adventure.
         </p>
-        <div class="about-images mb-3">
-          <img src="images/mountains-nepal.jpg" alt="Nepal Mountains" class="about-img" />
-          <img src="images/buddha.jpg" alt="Gautam Buddha" class="about-img" />
-          <img src="images/nature.jpg" alt="Nepal Nature" class="about-img" />
+
+        <div class="history-images d-flex flex-wrap justify-content-center gap-4">
+          <div class="history-img-wrapper fade-in">
+            <img src="images/kirat.jpg" alt="Kirat Dynasty" class="history-img" />
+            <p>Kirat Dynasty</p>
+          </div>
+          <div class="history-img-wrapper fade-in">
+            <img src="images/licchavis.jpg" alt="Licchavi Dynasty" class="history-img" />
+            <p>Licchavi Dynasty</p>
+          </div>
+          <div class="history-img-wrapper fade-in">
+            <img src="images/malla.jpg" alt="Malla Dynasty" class="history-img" />
+            <p>Malla Dynasty</p>
+          </div>
+          <div class="history-img-wrapper fade-in">
+            <img src="images/prithvi.jpg" alt="King Prithvi Narayan Shah" class="history-img" />
+            <p>Prithvi Narayan Shah</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- About Nepal Section -->
+    <section class="about-nepal py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">About Nepal</h2>
+        <p class="mb-5">
+          Nepal, nestled in the heart of the Himalayas, is a land of majestic mountains, vibrant culture, and rich traditions. From Mount Everest to the serene lakes of Pokhara, the country offers breathtaking natural beauty. Nepal is also a spiritual hub, home to Lumbini, the birthplace of Lord Buddha, and countless temples and monasteries. The Nepali people, known for their warmth and hospitality, celebrate numerous festivals and maintain customs that have lasted centuries. Today, Nepal combines its historical heritage with a growing tourism and adventure industry, inviting visitors to explore its unique landscapes, culture, and traditions.
+        </p>
 
-<!-- History Section -->
-<section class="history-section py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">History of Nepal</h2>
-
-    <p class="mb-5">
-      Nepal has a rich history dating back thousands of years. The Kathmandu Valley was initially ruled by the Kirat dynasty, followed by the Licchavi and Malla dynasties, each contributing greatly to art, architecture, and culture. In the 18th century, King Prithvi Narayan Shah unified small kingdoms to form modern Nepal. Today, Nepal preserves its historical traditions while moving towards modernization.
-    </p>
-
-    <div class="history-images d-flex flex-wrap justify-content-center gap-4">
-      <div class="history-img-wrapper">
-        <img src="images/kirat.jpg" alt="Kirat Dynasty" class="history-img" />
-        <p>Kirat Dynasty</p>
+        <div class="about-nepal-images d-flex flex-wrap justify-content-center gap-4">
+          <div class="about-img-wrapper fade-in">
+            <img src="images/pou.jpg" alt="Pokhara" class="about-img" />
+            <p>Pokhara</p>
+          </div>
+          <div class="about-img-wrapper fade-in">
+            <img src="images/you.jpg" alt="Mount Everest" class="about-img" />
+            <p>Mount Everest</p>
+          </div>
+          <div class="about-img-wrapper fade-in">
+            <img src="images/lumbini.jpg" alt="Lumbini" class="about-img" />
+            <p>Lumbini</p>
+          </div>
+          <div class="about-img-wrapper fade-in">
+            <img src="images/kathmandu.jpg" alt="Kathmandu" class="about-img" />
+            <p>Kathmandu</p>
+          </div>
+        </div>
       </div>
-      <div class="history-img-wrapper">
-        <img src="images/licchavis.jpg" alt="Licchavi Dynasty" class="history-img" />
-        <p>Licchavi Dynasty</p>
-      </div>
-      <div class="history-img-wrapper">
-        <img src="images/malla.jpg" alt="Malla Dynasty" class="history-img" />
-        <p>Malla Dynasty</p>
-      </div>
-      <div class="history-img-wrapper">
-        <img src="images/prithvi.jpg" alt="King Prithvi Narayan Shah" class="history-img" />
-        <p>Prithvi Narayan Shah</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-
-
-<section>
     <!-- Explore Cards -->
-    <div class="explore px-5 py-5" id="explore">
-      <h2>Explore Nepal</h2>
-      <div class="explore-cards">
+    <section class="explore px-5 py-5" id="explore">
+      <h2 class="text-center mb-4">Explore Nepal</h2>
+      <div class="explore-cards d-flex flex-wrap justify-content-center gap-4">
         <div class="card">
           <a href="mountains.html" style="text-decoration:none; color:inherit;">
             <img src="images/istockphoto-1595721515-612x612.jpg" alt="Mountains of Nepal" />
@@ -184,16 +191,14 @@
           </a>
         </div>
       </div>
-    </div>
     </section>
 
-
     <!-- Footer -->
-    <div class="footer text-center py-4">
+    <footer class="footer text-center py-4">
       <h5>Explore Nepal</h5>
       <p>Discover the Heart of the Himalayas</p>
       <p>© 2025 All Rights Reserved</p>
-    </div>
+    </footer>
 
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -207,6 +212,19 @@
             .scrollIntoView({ behavior: "smooth" });
         });
       });
+
+      // Fade-in animation on scroll
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = { threshold: 0.3, rootMargin: "0px 0px -50px 0px" };
+      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if(!entry.isIntersecting) return;
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+
+      faders.forEach(fader => appearOnScroll.observe(fader));
     </script>
   </body>
 </html>
