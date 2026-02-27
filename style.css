@@ -157,6 +157,24 @@ body {
   color: #444;
 }
 
+.why-nepal {
+  background-color: #f4f8fb;
+}
+
+.feature-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
 /* Footer */
 .footer {
   background-color: #0d47a1;
